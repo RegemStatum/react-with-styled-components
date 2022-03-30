@@ -5,7 +5,7 @@ import * as borderRadiuses from "./abstracts/border-radiuses";
 import * as fontSizes from "./abstracts/font-sizes";
 import * as indentations from "./abstracts/indentations";
 
-const styles = {
+const st = {
   breakpoints,
   colors,
   shadows,
@@ -14,4 +14,4 @@ const styles = {
   indentations,
 };
 
-export default styles;
+export default st;
