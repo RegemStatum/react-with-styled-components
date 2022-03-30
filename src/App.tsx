@@ -1,15 +1,13 @@
 import React from "react";
 import Layout from "./components/layout/Layout";
-import HomePage from "./pages/HomePage";
+import PagesRouting from "./pages/PagesRouting";
 import GlobalStyle from "./styles/globalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Layout>
-        <HomePage />
-      </Layout>
+      <PagesRouting />
     </>
   );
 }

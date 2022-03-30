@@ -1,7 +1,43 @@
 import { createGlobalStyle } from "styled-components";
-import abstracts from ".";
+import st from ".";
 
 const GlobalStyle = createGlobalStyle`
+// Global styles
+body {
+ background-color: ${st.colors.nt_10};
+  font-family: "Open Sans", sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  // xs
+  p {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  a {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.container {
+  margin: 0 ${st.indentations.ind_800};
+
+  @media (min-width: ${st.breakpoints.md}) {
+    margin: 0 ${st.indentations.ind_1200};
+  }
+
+  @media (min-width: ${st.breakpoints.lg}) {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+}
+
 // Reset
 /* Указываем box sizing */
 *,
@@ -131,28 +167,7 @@ button {
     url(../../public/fonts/OpenSans/OpenSans-ExtraBold.ttf) format("truetype");
 }
 
-// Global styles
-body {
- background-color: ${abstracts.colors.nt_10};
-  font-family: "Open Sans", sans-serif;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Roboto", sans-serif;
-  }
-
-  // xs
-  p {
-    font-family: "Open Sans", sans-serif;
-  }
-
-  a {
-    font-family: "Open Sans", sans-serif;
-  }
-}
 
 `;
 

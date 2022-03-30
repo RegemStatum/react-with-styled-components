@@ -1,24 +1,25 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import st from "../../styles";
+import { HeaderWrapper } from "./Header";
+import Navigation from "./Navigation";
 
 const Footer: FC = () => {
   return (
     <Wrapper>
-      Footer<Logo>123</Logo>
+      <div className="container">
+        <Navigation />
+      </div>
     </Wrapper>
   );
 };
 
-const Logo = styled.div`
-  ${st.shadows.boxShadow1};
-`;
+const Wrapper = styled(HeaderWrapper)`
+  background-color: ${st.colors.nt_1};
 
-const Wrapper = styled.div`
-  color: ${st.colors.sp_red_1};
-  background-color: ${st.colors.nt_2};
-  padding-left: ${st.indentations.ind_300};
-  ${st.fontSizes.fs_500};
+  nav a {
+    color: ${st.colors.nt_10};
+  }
 `;
 
 export default Footer;
