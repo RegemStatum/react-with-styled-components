@@ -38,6 +38,10 @@ body {
   }
 }
 
+.page-min-height {
+  min-height: calc(100vh - 144px);
+}
+
 // Reset
 /* Указываем box sizing */
 *,

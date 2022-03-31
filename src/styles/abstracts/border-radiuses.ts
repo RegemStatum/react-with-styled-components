@@ -1,5 +1,5 @@
-const borderRadius1 = "border-radius: 2px;";
-const borderRadius2 = "border-radius: 5px;";
-const borderRadius3 = "border-radius: 10px;";
+const br_1 = "2px";
+const br_2 = "5px";
+const br_3 = "10px";
 
-export { borderRadius1, borderRadius2, borderRadius3 };
+export { br_1, br_2, br_3 };

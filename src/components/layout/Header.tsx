@@ -14,8 +14,8 @@ const Header: FC = () => {
 };
 
 export const HeaderWrapper = styled.header`
-  padding: ${st.indentations.ind_800} 0;
-  background-color: ${st.colors.nt_8};
+  padding: ${st.indentations.ind_1000} 0;
+  background-color: ${st.colors.nt_9};
 
   nav a {
     color: ${st.colors.nt_1};
